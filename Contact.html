@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ContactUs</title>
+        <script>
+            function showAlert(){
+                alert("Submit Button Clicked");
+            }
+        </script>
+    </head>
+
+    <style>
+        body{
+            height: 100vh;
+            background:linear-gradient(180deg, rgb(59, 59, 194),lightskyblue);
+        }
+        .Header{
+            width : 100%;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            color: rgba(0, 0, 0, 0.781);
+        }
+        .CommentBox{
+            font-style: italic;
+            padding: 1px;
+            text-align: center;
+            color: cornsilk;
+        }
+        form{
+            margin: auto;
+            padding-left: 35%;
+            padding-right: 35%;
+            color: bisque;
+        }
+
+        .feilds{
+            width: 100%;
+            margin: auto;
+        }
+
+        .SubBox{
+            width: 395px;
+            text-align: center;
+            padding-bottom: 10px;
+            background-color: lightskyblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <body>
+        <h1 class = "Header"> Contact Us </h1>
+
+        <div class="CommentBox">
+            <h4>Got a question? We would love to hear from you. <br>
+                Send us a a message and we will respond as soon as possible.</h4>   
+        </div>
+
+        <form action="#" method="get">
+            <label><br>Name*  </label><br>
+            <input type="text" class="feilds"><br><br>
+
+            <label>Email Address*  </label><br>
+            <input type="email" class="feilds"><br><br>
+
+            <label>Message* </label><br>
+            <textarea rows="5" cols="30" name="Message" class="feilds">
+            </textarea><br><br>
+
+            <input type="submit" value="Submit Message" onclick="showAlert()" class ="SubBox">
+        </form>
+    </body>
+</html>
